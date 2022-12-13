@@ -4,10 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.OnDelete;
 
 @Entity
 @Table(name = "springmvc")
@@ -18,8 +16,7 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private String email;
- //  @OneToOne(mappedBy = "student")
-//	private Task task;
+ 
    
 public Student(int i, String string, String string2) {
 	// TODO Auto-generated constructor stub
