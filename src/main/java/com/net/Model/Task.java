@@ -6,6 +6,7 @@ public class Task {
 	
 	private int id;
 	private String name;
+	
 	@OneToOne(mappedBy = "task")
 	private Student student;
 	public int getId() {

@@ -18,61 +18,44 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private String email;
-   @OneToOne(mappedBy = "student")
-	private Task task;
-	public Student(int i, String string, String string2) {
+ //  @OneToOne(mappedBy = "student")
+//	private Task task;
+   
+public Student(int i, String string, String string2) {
+	// TODO Auto-generated constructor stub
+}
+public Student() {
+	// TODO Auto-generated constructor stub
+}
+public long getId() {
+	return id;
+}
+public void setId(long id) {
+	this.id = id;
+}
+public String getFirstName() {
+	return firstName;
+}
+public void setFirstName(String firstName) {
+	this.firstName = firstName;
+}
+public String getLastName() {
+	return lastName;
+}
+public void setLastName(String lastName) {
+	this.lastName = lastName;
+}
+public String getEmail() {
+	return email;
+}
+public void setEmail(String email) {
+	this.email = email;
+}
 
-	}
-
-	public Student() {
-	}
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public Task getTask() {
-		return task;
-	}
-
-	public void setTask(Task task) {
-		this.task = task;
-	}
-
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-				+ ", task=" + task + "]";
-	}
-
+@Override
+public String toString() {
+	return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email +  "]";
+}
+   
 	
-
 }
