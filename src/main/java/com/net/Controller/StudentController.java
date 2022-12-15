@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.net.Model.Student;
 import com.net.Service.StudentService;
 
-@RestController
+@Controller
 public class StudentController {
 	@Autowired
 	private StudentService studentservice;
